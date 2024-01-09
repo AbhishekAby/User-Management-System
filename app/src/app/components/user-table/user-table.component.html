@@ -1,0 +1,27 @@
+<div class="table_wrap">
+  <div class="table_center">
+    <table mat-table [dataSource]="users" class="tab">
+
+      <!-- Define dynamic columns -->
+      <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+        <th mat-header-cell *matHeaderCellDef> {{ column | titlecase }} </th>
+        <td mat-cell *matCellDef="let user">
+
+          <!-- Input fields for each column -->
+          <ng-container>
+            <input [(ngModel)]="user[column]" (blur)="onUserInput()">
+          </ng-container>
+        </td>
+      </ng-container>
+
+      <!-- Define dynamic column headers and rows -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let user; columns: displayedColumns"></tr>
+    </table>
+
+    <!-- Paginator outside the table -->
+    <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]" [pageSize]="5" showFirstLastButtons
+      aria-label="Select page of users">
+    </mat-paginator>
+  </div>
+</div>

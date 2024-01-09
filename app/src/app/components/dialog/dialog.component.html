@@ -1,0 +1,10 @@
+  <div class="btn_grp text-center pt-1 pb-1">
+    <h3>Do you want to save?</h3>
+    <button *ngIf="!isClicked" (click)="saveUser()" class="saveBtn">Save</button>
+    <button *ngIf="isClicked" class="saveBtn">
+      <img src="../../../assets/images/spinner.gif" alt="Loading" />
+    </button>
+  
+    <button (click)="cancel()" class="cancelBtn">Cancel</button>
+  </div>
+  

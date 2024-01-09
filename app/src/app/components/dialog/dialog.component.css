@@ -1,0 +1,29 @@
+button {
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin: 5px 5px 5px 0;
+    min-width:75px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cancelBtn {
+    background: #e74c3c;
+}
+
+.saveBtn {
+    background-color: #3498db;
+  }
+  
+  .saveBtn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }

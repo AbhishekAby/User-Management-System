@@ -1,4 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.hdr_wrap {
+    background: #86A7FC;
+    color: #fff;
+    font-size: 22px;
+    padding: 2px;
+    text-align: center;
+    height: 2em;
+}
+
+.table_wrap {
+    padding: 0 1em;
+}
